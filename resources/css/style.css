@@ -28,6 +28,19 @@ h2, h3 {
   margin-top: 3rem;
 }
 
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .section {
+    margin-top: 3.77rem;
+    flex-direction: column;
+  }
+}
+
 /* Header */
 .company {
   background-color: cadetblue;
@@ -52,9 +65,6 @@ h2, h3 {
   color: white;
 }
 
-.nav {
-}
-
 .nav span {
   display: inline-block;
   padding: 1rem;
@@ -64,6 +74,21 @@ h2, h3 {
   display: none;
 }
 
+@media only screen and (max-width: 470px) {
+  .nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: inline-block;
+    color: white;
+    padding: 1rem;
+  }
+
+  .logo span {
+    display: none;
+  }
+}
 /* Banner */
 
 .banner {
@@ -95,6 +120,47 @@ h2, h3 {
   line-height: 1.2rem;
 }
 
+@media only screen and (max-width: 1024px) {
+  .banner {
+    height: 22rem;
+    padding-top: 0;
+  }
+
+  .headline-container {
+    margin-right: 2rem;
+  }
+
+  .headline {
+    margin-top: 5rem;
+    padding: 0.75rem 4rem;
+  }
+
+  .headline h2 {
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .banner {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .headline-container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .headline {
+    width: 100%;
+    margin-top: 9rem;
+    padding: 1rem auto;
+  }
+
+  .headline h2 {
+    font-size: 1rem;
+  }
+}
 /* Supporting */
 
 .support {
@@ -130,6 +196,7 @@ h2, h3 {
   max-width: 7rem;
 }
 
+
 /* Details */
 
 .info-box {
@@ -147,6 +214,23 @@ h2, h3 {
   padding: 0.5rem 1.25rem;
   margin-bottom: 1rem;
 }
+
+@media only screen and (max-width: 470px) {
+  .info-box {
+    width: 100%;
+    margin: 0 0 4rem 0;
+  }
+
+  .info-box h3 {
+    background-size: 100%;
+    width: 100%;
+  }
+
+  .info-box p {
+    font-size: 0.77rem;
+    padding: 0.5rem;
+  }
+}
 /* Footer */
 footer {
   margin-top: 5rem;
@@ -159,4 +243,14 @@ footer {
 
 #copyright {
   color: black;
+}
+
+@media only screen and (max-width: 470px) {
+  footer {
+    justify-content: center;
+  }
+
+  #copyright {
+    display: none;
+  }
 }
